@@ -2,3 +2,9 @@ main: com.zszf.bcNewYearPlugin
 version: 0.0.1
 name: bcNewYearPlugin
 api-version: 1.19
+commands:
+  startparkour:
+    description: "开始跑酷"
+    aliases:
+      - sparkour
+    usage: "/startparkour"
