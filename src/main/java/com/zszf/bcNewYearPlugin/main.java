@@ -19,8 +19,7 @@ public class main extends JavaPlugin {
     @Override
     public void onEnable(){
         logger.info("Enable bcNewYearPlugin");
-        config.getObject("admins", admins.class);
-        String[] admins_id = com.zszf.bcNewYearPlugin.eneity.admins.getAdmin_id();
+        String[] admins_id = config.getObject("admins", admins.class).getAdmin_id();
         logger.info("管理员有："+ Arrays.toString(admins_id));
         logger.info("祝你看到这句话时过年过的开开心心！");
         Objects.requireNonNull(Bukkit.getPluginCommand("startparkour")).setExecutor(new startParkourExecutor());

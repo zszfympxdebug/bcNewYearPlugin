@@ -17,8 +17,7 @@ public class startParkourExecutor implements CommandExecutor {
             return false;
         }
         Player p = (Player) sender;
-        main.instance.getConfig().getObject("admins", admins.class);
-        Player[] admins_player = com.zszf.bcNewYearPlugin.eneity.admins.getAdmin();
+        Player[] admins_player = main.instance.getConfig().getObject("admins", admins.class).getAdmin();
         for (Player player : admins_player) {
             if (p == player) {
                 main.isStartParkour = true;
