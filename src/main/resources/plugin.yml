@@ -8,3 +8,6 @@ commands:
     aliases:
       - sparkour
     usage: "/startparkour"
+  stopparkour:
+    description: "停止跑酷"
+    usage: "/stopparkout"

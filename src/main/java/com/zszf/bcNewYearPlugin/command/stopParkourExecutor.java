@@ -10,18 +10,18 @@ import org.bukkit.entity.Player;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Objects;
 
-public class startParkourExecutor implements CommandExecutor {
+public class stopParkourExecutor implements CommandExecutor {
     @Override
     @ParametersAreNonnullByDefault
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
-        if (args.length > 0) {
+        if(args.length != 0){
             return false;
         }
         Player p = (Player) sender;
-        Player[] admins_player = Objects.requireNonNull(main.instance.getConfig().getObject("admins", admins.class)).getAdmin();
-        for (Player player : admins_player) {
+        Player[] admins_id = Objects.requireNonNull(main.instance.getConfig().getObject("admins", admins.class)).getAdmin();
+        for (Player player : admins_id) {
             if (p == player) {
-                main.isStartParkour = true;
+                main.isStartParkour = false;
                 break;
             }
         }
