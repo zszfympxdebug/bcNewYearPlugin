@@ -9,10 +9,10 @@ import org.bukkit.event.Listener;
 
 public class PlayerJumpEventListener implements Listener {
     @EventHandler
-    public void onPlayerJump(PlayerJumpEvent e){
-        if(main.isStartParkour){
+    public void onPlayerJump(PlayerJumpEvent e) {
+        if (main.isStartParkour) {
             SpawnNewYearParticle spawnNewYearParticle = new SpawnNewYearParticle();
-            spawnNewYearParticle.SpawnParticle(e.getPlayer().getLocation(),  10, Particle.GLOW);
+            spawnNewYearParticle.SpawnParticle(e.getPlayer().getLocation(), 10, Particle.GLOW);
         }
     }
 }

@@ -1,4 +1,4 @@
-main: com.zszf.bcNewYearPlugin
+main: com.zszf.bcNewYearPlugin.main
 version: 0.0.1
 name: bcNewYearPlugin
 api-version: 1.19

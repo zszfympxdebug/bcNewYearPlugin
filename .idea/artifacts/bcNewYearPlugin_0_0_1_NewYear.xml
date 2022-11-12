@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="bcNewYearPlugin-0.0.1-NewYear">
+    <output-path>$PROJECT_DIR$/out/artifacts/bcNewYearPlugin_0_0_1_NewYear</output-path>
+    <root id="archive" name="bcNewYearPlugin-0.0.1-NewYear.jar">
+      <element id="module-output" name="bcNewYearPlugin" />
+    </root>
+  </artifact>
+</component>

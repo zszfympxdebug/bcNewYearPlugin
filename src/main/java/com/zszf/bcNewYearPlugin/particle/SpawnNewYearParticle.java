@@ -7,7 +7,7 @@ import org.bukkit.World;
 import java.util.Random;
 
 public class SpawnNewYearParticle {
-    public void SpawnParticle(Location base, int count, Particle particle){
+    public void SpawnParticle(Location base, int count, Particle particle) {
         Random r = new Random();
         World world = base.getWorld();
         double x = r.nextInt(20) - 10 + base.getX();
